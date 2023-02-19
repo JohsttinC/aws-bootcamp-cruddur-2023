@@ -16,4 +16,19 @@
 [Logical Architectual Diagram Share Link](https://lucid.app/lucidchart/6cc4a218-117e-451c-b92c-df397c451418/edit?viewport_loc=-531%2C-91%2C1363%2C1521%2C0_0&invitationId=inv_2f96516e-e0a0-4de4-b963-90ac7c5238c1
 )
 
-### Install and Verify AWS CLI 
+### Create an Admin User
+
+I created a An Admin User called johsttin and joined to the Admin Group, I also actived MFA
+
+![IAM User](assets/IAMUser.png)
+
+### Use CloudShell
+
+I used some comands in AWS CloudShell
+
+![CloudShell](assets/CloudShell.png)
+
+### Generate AWS Credentials
+
+
+![AWS Credentials](assets/Credentials.png)
