@@ -51,3 +51,30 @@ I created a Billing Alarm as shown in the "AWS Bootcamp Week 0 - Pricing Basics 
 I created two Budgets as shown in " Generate Credentials, AWS CLI, Budget and Billing Alarm via CLI" video, one for my AWS Free Tier and the other one for my Credits ($100)
 
 ![AWS Budget](assets/Budgets.png)
+
+## Homework Challenges
+
+### Destroy your root account credentials, Set MFA, IAM role
+
+I added a MFA to my root account and created an IAM account also with MFA, activated access to Billing from IAM user, created a new IAM role and assigned Billing access through policy, now I can use my IAM account to almost any task and the root account will not be used unless is required for some specific task.
+
+![Root User](assets/RootUser.png)
+![IAM User](assets/IAMUser.png)
+
+### Use EventBridge to hookup Health Dashboard to SNS and send notification when there is a service health issue.
+
+### Review all the questions of each pillars in the Well Architected Tool (No specialized lens)
+
+### Create an architectural diagram (to the best of your ability) the CI/CD logical pipeline in Lucid Charts
+
+I am barely new with CI/CD, I understand that after a commit there will be an automated deployment of a new version for the Frontend pods or Backend pods and maybe some images that we could be using in S3 Bucket
+
+![AWS CLI GitPod](assets/LogicalPipeline.png)
+
+[CI/CD Logical Pipeline Share Link](https://lucid.app/lucidchart/1b9d3fd5-6c58-418d-9bb5-474c2411a22d/edit?viewport_loc=-233%2C-144%2C3072%2C1535%2C0_0&invitationId=inv_7da94d66-1a8c-4698-b684-165ef34dd12c
+)
+
+### Research the technical and service limits of specific services and how they could impact the technical path for technical flexibility.
+
+### Open a support ticket and request a service limit
+
