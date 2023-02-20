@@ -30,5 +30,24 @@ I used some comands in AWS CloudShell
 
 ### Generate AWS Credentials
 
+I created an Access Key to be able to use AWS CLI
 
 ![AWS Credentials](assets/Credentials.png)
+
+### Installed AWS CLI
+
+I installed AWS CLI in GitPod and tested it
+
+![AWS CLI GitPod](assets/AWSCLI.png)
+
+### Create a Billing Alarm
+
+I created a Billing Alarm as shown in the "AWS Bootcamp Week 0 - Pricing Basics and Free tier" Video
+
+![AWS Billing Alarm](assets/BillingAlarm.png)
+
+### Create a Budget
+
+I created two Budgets as shown in " Generate Credentials, AWS CLI, Budget and Billing Alarm via CLI" video, one for my AWS Free Tier and the other one for my Credits ($100)
+
+![AWS Budget](assets/Budgets.png)
