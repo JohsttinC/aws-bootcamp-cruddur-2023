@@ -76,5 +76,13 @@ I am barely new with CI/CD, I understand that after a commit there will be an au
 
 ### Research the technical and service limits of specific services and how they could impact the technical path for technical flexibility.
 
+AWS has quotas and service limits, the service limits is a protection to unexpected excessive provisioning with this AWS protect to increase your bill from malicious actions or mistakes in deployment, this would be a problem if you reach the service limit and you still need more Compute Resource but you can just open a ticket requesting a service limit increase, You can monitor your quotas in the Service Quotas Dashboard
+
+![AWS Service Quotas Dashboard](assets/ServiceQuotasDashboard.png)
+
+![AWS Service Limit Ticket](assets/ServiceLimitTicket.png)
+
 ### Open a support ticket and request a service limit
+
+![AWS Ticket Request](assets/TicketRequest.png)
 
