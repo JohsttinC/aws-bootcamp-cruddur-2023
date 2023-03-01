@@ -73,6 +73,6 @@ Notification Test
 
 I installed WLS2 in Windows with the Ubuntu distribution, Docker Desktop and Vscode, I created a new docker compose file with different environment variables to make it work in a local environment
 
-![DockerLocal](DockerLocal.png)
+![DockerLocal](assets/DockerLocal.png)
 
 ### Launch an EC2 instance that has docker installed, and pull a container to demonstrate you can run your own docker processes. 
