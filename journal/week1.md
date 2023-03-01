@@ -40,16 +40,24 @@ Frontend and Backend Test
 
 ### Write a React Page for Notifications
 
-![Docker Compose](assets/FrontendEntry.png)
+![Frontend Entry(assets/FrontendEntry.png)
 
-![Docker Compose](assets/FrontendCSS.png)
+![Frontend CSS](assets/FrontendCSS.png)
 
 Notification Test
 
-![Docker Compose](assets/NotificationTest2.png)
+![Notification Test](assets/NotificationTest2.png)
 
 
 
 ### Run DynamoDB Local Container and ensure it works
 
+![Postgres](assets/Postgres.png)
+
+![Postgres Test](assets/PostgresTest.png)
+
 ### Run Postgres Container and ensure it works
+
+![DynamoDB](assets/DynamoDB.png)
+
+![DynamoDBTest](assets/DynamoDBTest.png)
