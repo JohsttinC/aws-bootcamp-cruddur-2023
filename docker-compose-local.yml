@@ -1,5 +1,6 @@
 version: "3.8"
 services:
+####BACKEND CONTAINER######
   backend-flask:
     environment:
       FRONTEND_URL: "*"
@@ -7,11 +8,14 @@ services:
       OTEL_SERVICE_NAME: "backend-flask"
       OTEL_EXPORTER_OTLP_ENDPOINT: "https://api.honeycomb.io"
       OTEL_EXPORTER_OTLP_HEADERS: "x-honeycomb-team=${HONEYCOMB_API_KEY}"
+      AWS_XRAY_URL: "*"
+      AWS_XRAY_DAEMON_ADDRESS: "xray-daemon:2000"
     build: ./backend-flask
     ports:
       - "4567:4567"
     volumes:
       - ./backend-flask:/backend-flask
+####FRONTEND CONTAINER#########
   frontend-react-js:
     environment:
       REACT_APP_BACKEND_URL: "http://127.0.0.1:4567/"
@@ -20,6 +24,7 @@ services:
       - "3000:3000"
     volumes:
       - ./frontend-react-js:/frontend-react-js
+####DYNAMO DB CONTAINER###########
   dynamodb-local:
     # https://stackoverflow.com/questions/67533058/persist-local-dynamodb-data-in-volumes-lack-permission-unable-to-open-databa
     # We needed to add user:root to get this working.
@@ -32,6 +37,7 @@ services:
     volumes:
       - "./docker/dynamodb:/home/dynamodblocal/data"
     working_dir: /home/dynamodblocal
+#####POSTGRES CONTAINER######
   db:
     image: postgres:13-alpine
     restart: always
@@ -42,6 +48,17 @@ services:
       - '5432:5432'
     volumes: 
       - db:/var/lib/postgresql/data
+#####XRAY CONTAINER###########
+  xray-daemon:
+    image: "amazon/aws-xray-daemon"
+    environment:
+      AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
+      AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
+      AWS_REGION: "us-east-1"
+    command:
+      - "xray -o -b xray-daemon:2000"
+    ports:
+      - 2000:2000/udp
 # the name flag is a hack to change the default prepend folder
 # name when outputting the image names
 networks: 
