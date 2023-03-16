@@ -55,4 +55,5 @@ class HomeActivities:
       }
       ]
     return results
+    ####HONEYCOMB
     span.set_attribute("app.result_length", len(result_length))
