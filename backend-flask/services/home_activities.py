@@ -1,12 +1,16 @@
 from datetime import datetime, timedelta, timezone
+####HONEYCOMB###
 from opentelemetry import trace
+####CLOUDWATCH LOGS
 import logging
 
 tracer = trace.get_tracer("home.activities")
 
 class HomeActivities:
+  ####CLOUDWATCH LOGS (Logger)
   def run(Logger):
     Logger.info("HomeActivities")
+    #####HONEYCOMB
     with tracer.start_as_current_span("home-activities-mock-data"):
       span = trace.get_current_span()
       now = datetime.now(timezone.utc).astimezone()
