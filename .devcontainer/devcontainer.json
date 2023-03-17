@@ -2,5 +2,14 @@
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "features": {
     "ghcr.io/devcontainers/features/aws-cli:1": {}
+  },
+  "name": "Cruddur Configuration",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "customitzations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker"
+      ]
+    }
   }
 }
