@@ -43,7 +43,17 @@ Testing XRAY subsegments
 
 ### Configure custom logger to send to CloudWatch Logs
 
+Editing file app.py and home_activities.yml
 
+![CloudWatch1](assets/CloudWatch1.png)
+
+![CloudWatch2](assets/CloudWatch2.png)
+
+Testing CloudWatch Logs
+
+![CloudWatch3](assets/CloudWatch3.png)
+
+![CloudWatch4](assets/CloudWatch4.png)
 
 ### Integrate Rollbar and capture and error
 
