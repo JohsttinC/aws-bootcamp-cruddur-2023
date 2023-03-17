@@ -57,4 +57,20 @@ Testing CloudWatch Logs
 
 ### Integrate Rollbar and capture and error
 
+Editing file app.py and docker-compose.yml
 
+![RollBar1](assets/RollBar1.png)
+
+![RollBar2](assets/RollBar2.png)
+
+Testing Test API for Rollbar
+
+![RollBar3](assets/RollBar3.png)
+
+Checking Data in RollBar
+
+![RollBar4](assets/RollBar4.png)
+
+![RollBar5](assets/RollBar5.png)
+
+![RollBar6](assets/RollBar6.png)
