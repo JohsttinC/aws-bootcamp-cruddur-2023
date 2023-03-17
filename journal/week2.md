@@ -1,7 +1,7 @@
 # Week 2 — Distributed Tracing
 ## Required Homework
-
-Editing file app.py, docker-compose.yml and home-activities.py
+### Instrument Honeycomb with OTEL
+Editing file app.py, docker-compose.yml and home_activities.py
 
 ![HoneyComb1](assets/HoneyComb1.png)
 
@@ -17,13 +17,25 @@ Testing HoneyComb
 
 ![HoneyComb6](assets/HoneyComb6.png)
 
-### Instrument Honeycomb with OTEL
-
-
-
 ### Instrument AWS X-Ray
 
+Editing file app.py, docker-compose.yml and user_activities.py
 
+![XRAY1](assets/XRAY1.png)
+
+![XRAY3](assets/XRAY3.png)
+
+![XRAY2](assets/XRAY2.png)
+
+Testing XRAY
+
+![XRAY4](assets/XRAY4.png)
+
+![XRAY5](assets/XRAY5.png)
+
+Testing XRAY subsegments
+
+![XRAY6](assets/XRAY6.png)
 
 ### Instrument AWS X-Ray Subsegments
 
