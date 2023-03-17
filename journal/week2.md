@@ -19,27 +19,27 @@ Testing HoneyComb
 
 ### Instrument AWS X-Ray
 
-Editing file app.py, docker-compose.yml and user_activities.py
+Editing file app.py and docker-compose.yml
 
 ![XRAY1](assets/XRAY1.png)
 
 ![XRAY3](assets/XRAY3.png)
 
-![XRAY2](assets/XRAY2.png)
-
 Testing XRAY
 
 ![XRAY4](assets/XRAY4.png)
-
-![XRAY5](assets/XRAY5.png)
-
-Testing XRAY subsegments
 
 ![XRAY6](assets/XRAY6.png)
 
 ### Instrument AWS X-Ray Subsegments
 
+Editing file user_activities.py
 
+![XRAY2](assets/XRAY2.png)
+
+Testing XRAY subsegments
+
+![XRAY5](assets/XRAY5.png)
 
 ### Configure custom logger to send to CloudWatch Logs
 
