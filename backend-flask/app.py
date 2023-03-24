@@ -56,6 +56,10 @@ xray_url = os.getenv("AWS_XRAY_URL")
 xray_recorder.configure(service='backend-flask', dynamic_naming=xray_url)
 
 app = Flask(__name__)
+####JWT
+app.config['AWS_COGNITO_USER_POOL_ID'] = os.getenv("AWS_USER_POOLS_ID")
+app.config['AWS_COGNITO_USER_POOL_CLIENT_ID'] = os.getenv("APP_CLIENT_ID")
+aws_auth = AWSCognitoAuthentication(app)
 # X-RAY ----------
 XRayMiddleware(app, xray_recorder)
 #####HoneyComb####Initialize automatic instrumentation with Flask
