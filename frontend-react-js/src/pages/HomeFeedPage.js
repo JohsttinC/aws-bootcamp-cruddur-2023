@@ -63,6 +63,8 @@ export default function HomeFeedPage() {
 
   // check when the page loads if we are authenicated
   React.useEffect(()=>{
+    if (dataFetchedRef.current) return;
+    dataFetchedRef.current = true;
     loadData();
     checkAuth();
   }, [])
